@@ -1,4 +1,4 @@
-const backendApiUrl = "libarymanagementsystembackend-production.up.railway.app";
+const backendApiUrl = "https://libarymanagementsystembackend-production.up.railway.app/api";
 
 const routes = {
   AUTHOR: "author",
