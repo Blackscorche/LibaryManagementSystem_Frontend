@@ -1,4 +1,4 @@
-const backendApiUrl = "http://localhost:8080/api";
+const backendApiUrl = "libarymanagementsystembackend-production.up.railway.app";
 
 const routes = {
   AUTHOR: "author",
