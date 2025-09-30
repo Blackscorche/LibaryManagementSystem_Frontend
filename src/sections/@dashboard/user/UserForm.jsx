@@ -183,7 +183,7 @@ const UserForm = ({
                 <Grid container spacing={0}>
                   <Grid item xs={12} md={6} paddingRight={1}>
                     <FormControlLabel
-                      value={true}
+                      value="true"
                       control={<Radio />}
                       label="Librarian"
                       sx={{ textAlign: "center", justifyContent: "center", width: "100%" }}
@@ -191,7 +191,7 @@ const UserForm = ({
                   </Grid>
                   <Grid item xs={12} md={6} paddingLeft={1}>
                     <FormControlLabel
-                      value={false}
+                      value="false"
                       control={<Radio />}
                       label="Member"
                       sx={{ textAlign: "center", justifyContent: "center", width: "100%" }}
