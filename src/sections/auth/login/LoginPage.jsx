@@ -43,7 +43,7 @@ export default function LoginPage() {
     if (email === "" || password === "") {
       toast.error("Please enter email and password");
     } else {
-      axios.post(`http://localhost:8080/api/auth/login`, { email, password }, { withCredentials: false })
+      axios.post(`libarymanagementsystembackend-production.up.railway.app`, { email, password }, { withCredentials: false })
         .then((response) => {
           // handle success
           if (response.status === 200) {
@@ -79,7 +79,7 @@ export default function LoginPage() {
         <Container maxWidth="sm">
           <StyledContent>
             <Typography variant="h4" sx={{ color: "#666666", fontWeight: "600" }} textAlign="center" gutterBottom
-                        paddingBottom={0}>
+              paddingBottom={0}>
               Library System
             </Typography>
             <Typography variant="h3" textAlign="center" gutterBottom paddingBottom={3}>
