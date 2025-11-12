@@ -41,7 +41,7 @@ const BookForm = ({
   const [previewUrl, setPreviewUrl] = useState(null);
 
   const getAllAuthors = () => {
-    axios.get('https://libarymanagementsystembackend-production.up.railway.app/api/author/getAll')
+    axios.get('https://libsback.up.railway.app/api/author/getAll')
       .then((response) => {
         console.log(response.data);
         setAuthors(response.data.authorsList);
@@ -53,7 +53,7 @@ const BookForm = ({
   };
 
   const getAllGenres = () => {
-    axios.get('https://libarymanagementsystembackend-production.up.railway.app/api/genre/getAll')
+    axios.get('https://libsback.up.railway.app/api/genre/getAll')
       .then((response) => {
         console.log(response.data);
         setGenres(response.data.genresList);

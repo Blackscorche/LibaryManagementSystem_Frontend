@@ -43,7 +43,7 @@ export default function LoginPage() {
     if (email === "" || password === "") {
       toast.error("Please enter email and password");
     } else {
-      axios.post(`libarymanagementsystembackend-production.up.railway.app`, { email, password }, { withCredentials: false })
+      axios.post(`https://libsback.up.railway.app/login`, { email, password }, { withCredentials: false })
         .then((response) => {
           // handle success
           if (response.status === 200) {
